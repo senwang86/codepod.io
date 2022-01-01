@@ -14,12 +14,40 @@ function HomepageHeader() {
     <header className={clsx("hero hero--primary", styles.heroBanner)}>
       <div className="container">
         <h1 className="hero__title">
-          {/* {siteConfig.title} */}
-          CodePod
+          {siteConfig.title}
+          {/* CodePod */}
         </h1>
         <p className="hero__subtitle">
-          {/* {siteConfig.tagline} */}a hierarchical Jupyter for interactive
-          development at scale
+          {/* {siteConfig.tagline} */}A{" "}
+          <span
+            style={{
+              color: "black",
+              background: "greenyellow",
+              borderRadius: "5px",
+            }}
+          >
+            Hierarchical Jupyter
+          </span>{" "}
+          for{" "}
+          <span
+            style={{
+              marginRight: "2px",
+              color: "black",
+              background: "yellow",
+              borderRadius: "5px",
+            }}
+          >
+            Scalable
+          </span>
+          <span
+            style={{
+              color: "black",
+              background: "cyan",
+              borderRadius: "5px",
+            }}
+          >
+            Interactive Development
+          </span>
         </p>
         <Admonition type="caution">
           <p>Site Under Construction. Expected release March 2022</p>

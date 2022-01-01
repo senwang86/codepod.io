@@ -6,15 +6,15 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "CodePod: a hierarchical Jupyter for interactive development at scale",
-  tagline: "Dinosaurs are cool",
+  title: "CodePod",
+  tagline: "A Hierarchical Jupyter for Interactive Development At Scale",
   url: "https://codepod.io",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
-  organizationName: "facebook", // Usually your GitHub org/user name.
-  projectName: "docusaurus", // Usually your repo name.
+  organizationName: "lihebi", // Usually your GitHub org/user name.
+  projectName: "codepod.io", // Usually your repo name.
 
   presets: [
     [
@@ -58,7 +58,7 @@ const config = {
           },
           { to: "/blog", label: "Blog", position: "left" },
           {
-            href: "https://github.com/facebook/docusaurus",
+            href: "https://github.com/lihebi/codepod",
             label: "GitHub",
             position: "right",
           },
@@ -102,7 +102,7 @@ const config = {
               },
               {
                 label: "GitHub",
-                href: "https://github.com/facebook/docusaurus",
+                href: "https://github.com/lihebi/codepod",
               },
             ],
           },
