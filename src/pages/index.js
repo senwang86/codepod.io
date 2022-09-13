@@ -50,7 +50,7 @@ function HomepageHeader() {
           </span>
         </p>
         <Admonition type="caution">
-          <p>Site Under Construction. Expected release March 2022</p>
+          <p>Site Under Construction. Expected release Sep 2022</p>
         </Admonition>
         <div className={styles.buttons}>
           <Link
