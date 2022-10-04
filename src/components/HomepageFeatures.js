@@ -4,13 +4,17 @@ import styles from "./HomepageFeatures.module.css";
 
 const FeatureList = [
   {
-    title: "Easy to Use",
+    title: "Open Source",
     Svg: require("../../static/img/undraw_docusaurus_mountain.svg").default,
     description: (
       <>
         {/* Docusaurus was designed from the ground up to be easily installed and
         used to get your website up and running quickly. */}
-        Easily create and maintain a tree of code pods, write code, and execute.
+        Like you, we believe in open-source. You can find the{" "}
+        <a href="https://github.com/lihebi/codepod" target="_blank">
+          source code
+        </a>{" "}
+        on GitHub. We'd like your contribution to make it a better tool!
       </>
     ),
   },
