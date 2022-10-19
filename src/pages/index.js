@@ -14,6 +14,8 @@ import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Unstable_Grid2";
 
+import Stack from "@mui/material/Stack";
+
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
   ...theme.typography.body2,
@@ -32,24 +34,51 @@ function HomepageHeader() {
           {/* CodePod */}
         </h1>
         <p className="hero__subtitle">Coding on a canvas, more organized.</p>
-        <Admonition type="info">
-          <p>
-            (new, 09/19/2022) We are open for internal testing. The v1 of the
-            app:{" "}
-            <Link
-              to="https://relay.codepod.io"
-              className="button button--secondary button--lg"
+        <Admonition type="info" title="What's new">
+          <Stack spacing={2}>
+            <Item
+              sx={{
+                textAlign: "start",
+              }}
             >
-              relay.codepod.io
-            </Link>
-          </p>
-          <p>
-            Please refer to the{" "}
-            <Link to="https://youtu.be/3puYJ-rM46g">
-              3 min tutorial video (in Chinese)
-            </Link>{" "}
-            for how to use it.
-          </p>
+              [coming soon] We're working on a new more intuitive
+              namespace-aware runtime, auto-layout engine, and real-time
+              collaboration.
+            </Item>
+            <Item
+              sx={{
+                textAlign: "start",
+              }}
+            >
+              [10/17/2022]{" "}
+              <Link
+                to="/docs/codepod/v0.4.2.graph-based.tutorial"
+                // className="button button--secondary button--lg"
+              >
+                v0.4.2 is online (blog post)
+              </Link>{" "}
+              , featuring <b>graph-based interface</b> and k8s deployment.
+            </Item>
+            <Item
+              sx={{
+                textAlign: "start",
+              }}
+            >
+              [09/19/2022]{" "}
+              <Link
+                to="https://relay.codepod.io"
+                // className="button button--secondary button--lg"
+              >
+                v0.3.0 is online.
+              </Link>{" "}
+              We are open for internal testing for{" "}
+              <b>our first public release</b>. Please refer to the{" "}
+              <Link to="https://youtu.be/3puYJ-rM46g">
+                3 min tutorial video (in Chinese)
+              </Link>{" "}
+              for how to use it.
+            </Item>
+          </Stack>
         </Admonition>
       </div>
     </header>
