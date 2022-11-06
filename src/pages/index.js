@@ -34,6 +34,31 @@ function HomepageHeader() {
           {/* CodePod */}
         </h1>
         <p className="hero__subtitle">Coding on a canvas, more organized.</p>
+        <Box sx={{ my: 3 }}>
+          <div className="container">
+            <Box
+              sx={{
+                mx: 3,
+              }}
+              component="span"
+            >
+              <Link
+                className="button button--secondary button--lg"
+                to="https://app.codepod.io"
+              >
+                Try it online
+              </Link>
+            </Box>
+            <Link
+              className="button button--secondary button--lg"
+              to="https://github.com/codepod-io/codepod"
+            >
+              Source Code
+            </Link>
+          </div>
+        </Box>
+
+        <Box></Box>
         <Admonition type="info" title="What's new">
           <Stack spacing={2}>
             <Item
@@ -44,6 +69,21 @@ function HomepageHeader() {
               [coming soon] We're working on a new more intuitive
               namespace-aware runtime, auto-layout engine, and real-time
               collaboration.
+            </Item>
+            <Item
+              sx={{
+                textAlign: "start",
+              }}
+            >
+              [11/06/2022] v0.4.3 is online,{" "}
+              <Link
+                to="https://app.codepod.io"
+                // className="button button--secondary button--lg"
+              >
+                try it here
+              </Link>{" "}
+              , featuring <b>k8s runtime spawner</b>, better runtime management,
+              http proxy, and various bug fixes.
             </Item>
             <Item
               sx={{
