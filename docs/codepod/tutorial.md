@@ -6,9 +6,9 @@ sidebar_position: 1
 
 The new graph-based interface provides a more intuitive way to develop your project in CodePod.
 
-**Try it [here](https://edge.codepod.io)**
+**Try it [here](https://app.codepod.io)**
 
-You will need to signup and signin to the site. (OAuth login coming soon!), the invitation code is `CPFOUNDERS`.
+You will need to signup and signin to the site.
 
 After login, go to the repos page, and **create a repo**:
 

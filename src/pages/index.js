@@ -33,7 +33,7 @@ function HomepageHeader() {
           {siteConfig.title}
           {/* CodePod */}
         </h1>
-        <p className="hero__subtitle">Coding on a canvas, more organized.</p>
+        <p className="hero__subtitle">{`${siteConfig.tagline}`}</p>
         <Box sx={{ my: 3 }}>
           <div className="container">
             <Box
@@ -85,7 +85,7 @@ function HomepageHeader() {
               , featuring <b>k8s runtime spawner</b>, better runtime management,
               http proxy, and various bug fixes.
             </Item>
-            <Item
+            {/* <Item
               sx={{
                 textAlign: "start",
               }}
@@ -98,7 +98,7 @@ function HomepageHeader() {
                 v0.4.2 is online (blog post)
               </Link>{" "}
               , featuring <b>graph-based interface</b> and k8s deployment.
-            </Item>
+            </Item> */}
             <Item
               sx={{
                 textAlign: "start",
@@ -129,7 +129,7 @@ export default function Home() {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
+      title={`${siteConfig.title}`}
       description="Description will go into a meta tag in <head />"
     >
       <HomepageHeader />
