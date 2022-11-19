@@ -21,9 +21,15 @@
     "@mdx-js/react": "^1.6.21",
     "@mui/material": "^5.10.8",
     "clsx": "^1.1.1",
+    "css-loader": "^6.7.2",
+    "docusaurus-plugin-sass": "^0.2.2",
+    "node-sass": "^8.0.0",
     "prism-react-renderer": "^1.2.1",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "sass": "^1.56.1",
+    "sass-loader": "^13.2.0",
+    "style-loader": "^3.3.1"
   },
   "browserslist": {
     "production": [

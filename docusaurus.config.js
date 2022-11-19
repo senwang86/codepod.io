@@ -7,14 +7,14 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "CodePod",
-  tagline: "A Hierarchical Jupyter for Interactive Development At Scale",
+  tagline: "Canvas-based Hierarchical and Scalable Exploratory Coding",
   url: "https://codepod.io",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
-  organizationName: "lihebi", // Usually your GitHub org/user name.
-  projectName: "codepod.io", // Usually your repo name.
+  organizationName: "codepod-io", // Usually your GitHub org/user name.
+  projectName: "codepod", // Usually your repo name.
 
   presets: [
     [
@@ -34,7 +34,14 @@ const config = {
             "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
         },
         theme: {
-          customCss: require.resolve("./src/css/custom.css"),
+          customCss: [ 
+            require.resolve("./src/css/custom.css"),
+            require.resolve("./src/css/index.scss"),
+            require.resolve("./src/css/_shared.scss"),
+            // require.resolve("./src/components/container/container.scss"),
+            // require.resolve("./src/components/heading/heading.scss"),
+            // require.resolve("./src/sections/why.scss"),
+          ],
         },
       }),
     ],
@@ -76,6 +83,19 @@ const config = {
               },
             ],
           },
+          // {
+          //   title: "Team",
+          //   items: [
+          //        {
+          //          label: "Hebi Li, CEO/co-founder",
+          //          href: "https://lihebi.com/",
+          //        },
+          //        {
+          //         label: "Forrest Bao, co-founder",
+          //         href: "https://forrestbao.github.io",
+          //       },
+          //   ],
+          // },
           {
             title: "Community",
             items: [
@@ -114,6 +134,7 @@ const config = {
       //   darkTheme: darkCodeTheme,
       // },
     }),
+    plugins: ['docusaurus-plugin-sass'],
 };
 
 module.exports = config;
