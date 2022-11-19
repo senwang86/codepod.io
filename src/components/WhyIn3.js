@@ -103,12 +103,12 @@ function Feature({ Svg, title, description }) {
   );
 }
 
-export default function HomepageFeatures() {
+export default function WhyIn3() {
   return (
     <section className={styles.features}>
       <div className="container">
         <div className="row">
-          {FeatureList2.map((props, idx) => (
+          {FeatureList1.map((props, idx) => (
             <Feature key={idx} {...props} />
           ))}
         </div>

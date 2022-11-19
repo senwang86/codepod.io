@@ -7,12 +7,12 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "CodePod",
-  tagline: "Canvas-based Hierarchical and Scalable Exploratory Coding",
+  tagline: "Canvas-based Scalable Interactive Coding",
   url: "https://codepod.io",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
-  favicon: "img/favicon.ico",
+  favicon: "img/note_prompt.png",
   organizationName: "codepod-io", // Usually your GitHub org/user name.
   projectName: "codepod", // Usually your repo name.
 
@@ -53,8 +53,8 @@ const config = {
       navbar: {
         title: "CodePod",
         logo: {
-          alt: "My Site Logo",
-          src: "img/logo.svg",
+          alt: "Codepod Logo",
+          src: "img/note_prompt.png",
         },
         items: [
           {
