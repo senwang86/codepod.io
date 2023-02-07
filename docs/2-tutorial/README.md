@@ -1,8 +1,12 @@
----
-sidebar_position: 1
----
+# Tutorial
 
-# v0.4.2: graph-based interface
+## Tutorial
+
+:::caution Deprecated
+
+This document was for CodePod v0.4.2. Much has been changed afterwards.
+
+:::
 
 The new graph-based interface provides a more intuitive way to develop your project in CodePod.
 
