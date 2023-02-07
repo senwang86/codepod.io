@@ -34,7 +34,7 @@ const config = {
             "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
         },
         theme: {
-          customCss: [ 
+          customCss: [
             require.resolve("./src/css/custom.css"),
             require.resolve("./src/css/index.scss"),
             require.resolve("./src/css/_shared.scss"),
@@ -58,17 +58,32 @@ const config = {
         },
         items: [
           {
-            type: "doc",
-            docId: "codepod/tutorial",
+            // type: "doc",
+            to: "docs/intro",
+            // docId: "intro",
+            position: "left",
+            label: "Docs",
+          },
+          {
+            // type: "doc",
+            to: "docs/tutorial",
+            // docId: "tutorial",
             position: "left",
             label: "Tutorial",
           },
-          // { to: "/blog", label: "Blog", position: "left" },
-          // {
-          //   href: "https://github.com/lihebi/codepod",
-          //   label: "GitHub",
-          //   position: "right",
-          // },
+          { to: "/blog", label: "Blog", position: "left" },
+          {
+            // type: "doc",
+            to: "docs/gsoc2023",
+            // docId: "gsoc2023",
+            position: "left",
+            label: "GSoC 2023 Project Ideas",
+          },
+          {
+            href: "https://github.com/codepod-io/codepod",
+            label: "GitHub",
+            position: "right",
+          },
         ],
       },
       footer: {
@@ -79,7 +94,7 @@ const config = {
             items: [
               {
                 label: "Tutorial",
-                to: "/docs/codepod/tutorial",
+                to: "/docs/tutorial",
               },
             ],
           },
@@ -99,22 +114,22 @@ const config = {
           {
             title: "Community",
             items: [
-          //     {
-          //       label: "Stack Overflow",
-          //       href: "https://stackoverflow.com/questions/tagged/docusaurus",
-          //     },
-          //     {
-          //       label: "Discord",
-          //       href: "https://discordapp.com/invite/docusaurus",
-          //     },
-          //     {
-          //       label: "Twitter",
-          //       href: "https://twitter.com/docusaurus",
-          //     },
-                 {
-                   label: "GitHub",
-                   href: "https://github.com/codepod-io/codepod",
-                 },
+              //     {
+              //       label: "Stack Overflow",
+              //       href: "https://stackoverflow.com/questions/tagged/docusaurus",
+              //     },
+              //     {
+              //       label: "Discord",
+              //       href: "https://discordapp.com/invite/docusaurus",
+              //     },
+              //     {
+              //       label: "Twitter",
+              //       href: "https://twitter.com/docusaurus",
+              //     },
+              {
+                label: "GitHub",
+                href: "https://github.com/codepod-io/codepod",
+              },
             ],
           },
           // {
@@ -127,14 +142,14 @@ const config = {
           //   ],
           // },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} CodePod, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} CodePod, Inc.`,
       },
       // prism: {
       //   theme: lightCodeTheme,
       //   darkTheme: darkCodeTheme,
       // },
     }),
-    plugins: ['docusaurus-plugin-sass'],
+  plugins: ["docusaurus-plugin-sass"],
 };
 
 module.exports = config;
