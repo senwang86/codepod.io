@@ -139,6 +139,10 @@ const config = {
                 label: "GitHub",
                 href: "https://github.com/codepod-io/codepod",
               },
+              {
+                label: "Privacy Policy",
+                to: "/docs/Reference/Legal/privacy-policy",
+              },
             ],
           },
         ],
