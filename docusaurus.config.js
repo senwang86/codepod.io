@@ -6,15 +6,31 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "CodePod",
+  title: "Codepod IDE",
   tagline: "Canvas-based Scalable Interactive Coding",
+  favicon: "img/logo.png",
+
+  // Set the production url of your site here
   url: "https://codepod.io",
+  // Set the /<baseUrl>/ pathname under which your site is served
+  // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/",
+
+  // GitHub pages deployment config.
+  // If you aren't using GitHub pages, you don't need these.
+  organizationName: "CodePod Inc.", // Usually your GitHub org/user name.
+  projectName: "Codepod", // Usually your repo name.
+
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
-  favicon: "img/note_prompt.png",
-  organizationName: "codepod-io", // Usually your GitHub org/user name.
-  projectName: "codepod", // Usually your repo name.
+
+  // Even if you don't use internalization, you can use this field to set useful
+  // metadata like html lang. For example, if your site is Chinese, you may want
+  // to replace "en" with "zh-Hans".
+  i18n: {
+    defaultLocale: "en",
+    locales: ["en"],
+  },
 
   presets: [
     [
@@ -24,24 +40,19 @@ const config = {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+          // Remove this to remove the "edit this page" links.
+          // editUrl:
+          //   "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+          // Remove this to remove the "edit this page" links.
+          // editUrl:
+          //   "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
         },
         theme: {
-          customCss: [
-            require.resolve("./src/css/custom.css"),
-            require.resolve("./src/css/index.scss"),
-            require.resolve("./src/css/_shared.scss"),
-            // require.resolve("./src/components/container/container.scss"),
-            // require.resolve("./src/components/heading/heading.scss"),
-            // require.resolve("./src/sections/why.scss"),
-          ],
+          customCss: require.resolve("./src/css/custom.css"),
         },
       }),
     ],
@@ -50,32 +61,24 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      // Replace with your project's social card
+      image: "img/docusaurus-social-card.jpg",
       navbar: {
-        title: "CodePod",
+        title: "Codepod",
         logo: {
           alt: "Codepod Logo",
-          src: "img/note_prompt.png",
+          src: "img/logo.png",
         },
         items: [
           {
             // type: "doc",
             to: "docs/intro",
-            // docId: "intro",
             position: "left",
             label: "Docs",
           },
-          {
-            // type: "doc",
-            to: "docs/tutorial",
-            // docId: "tutorial",
-            position: "left",
-            label: "Tutorial",
-          },
           { to: "/blog", label: "Blog", position: "left" },
           {
-            // type: "doc",
             to: "docs/gsoc2023",
-            // docId: "gsoc2023",
             position: "left",
             label: "GSoC 2023 Project Ideas",
           },
@@ -83,6 +86,12 @@ const config = {
             href: "https://github.com/codepod-io/codepod",
             label: "GitHub",
             position: "right",
+          },
+          {
+            to: "https://app.codepod.io/login",
+            label: "Login",
+            position: "right",
+            target: "",
           },
         ],
       },
@@ -94,62 +103,65 @@ const config = {
             items: [
               {
                 label: "Tutorial",
-                to: "/docs/tutorial",
+                to: "/docs/intro",
               },
             ],
           },
-          // {
-          //   title: "Team",
-          //   items: [
-          //        {
-          //          label: "Hebi Li, CEO/co-founder",
-          //          href: "https://lihebi.com/",
-          //        },
-          //        {
-          //         label: "Forrest Bao, co-founder",
-          //         href: "https://forrestbao.github.io",
-          //       },
-          //   ],
-          // },
           {
             title: "Community",
             items: [
-              //     {
-              //       label: "Stack Overflow",
-              //       href: "https://stackoverflow.com/questions/tagged/docusaurus",
-              //     },
-              //     {
-              //       label: "Discord",
-              //       href: "https://discordapp.com/invite/docusaurus",
-              //     },
-              //     {
-              //       label: "Twitter",
-              //       href: "https://twitter.com/docusaurus",
-              //     },
+              // {
+              //   label: "Stack Overflow",
+              //   href: "https://stackoverflow.com/questions/tagged/docusaurus",
+              // },
+              // {
+              //   label: "Discord",
+              //   href: "https://discordapp.com/invite/docusaurus",
+              // },
+              // {
+              //   label: "Twitter",
+              //   href: "https://twitter.com/docusaurus",
+              // },
               {
                 label: "GitHub",
                 href: "https://github.com/codepod-io/codepod",
               },
             ],
           },
-          // {
-          //   title: "More",
-          //   items: [
-          //     {
-          //       label: "Blog",
-          //       to: "/blog",
-          //     },
-          //   ],
-          // },
+          {
+            title: "More",
+            items: [
+              {
+                label: "Blog",
+                to: "/blog",
+              },
+              {
+                label: "GitHub",
+                href: "https://github.com/codepod-io/codepod",
+              },
+            ],
+          },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} CodePod, Inc.`,
+        copyright: `Copyright © ${new Date().getFullYear()} CodePod Inc.`,
       },
-      // prism: {
-      //   theme: lightCodeTheme,
-      //   darkTheme: darkCodeTheme,
-      // },
+      prism: {
+        theme: lightCodeTheme,
+        darkTheme: darkCodeTheme,
+      },
     }),
-  plugins: ["docusaurus-plugin-sass"],
+  plugins: [
+    async function myPlugin(context, options) {
+      return {
+        name: "docusaurus-tailwindcss",
+        configurePostCss(postcssOptions) {
+          // Appends TailwindCSS and AutoPrefixer.
+          postcssOptions.plugins.push(require("tailwindcss"));
+          postcssOptions.plugins.push(require("autoprefixer"));
+          return postcssOptions;
+        },
+      };
+    },
+  ],
 };
 
 module.exports = config;
