@@ -73,9 +73,9 @@ export function Team() {
                 <p className="text-base leading-7 text-gray-600">
                   {person.role}
                 </p>
-                <p className="mt-6 text-base leading-7 text-gray-600">
+                <div className="mt-6 text-base leading-7 text-gray-600">
                   {person.bio}
-                </p>
+                </div>
               </div>
             </li>
           ))}
