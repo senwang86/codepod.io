@@ -80,7 +80,12 @@ const config = {
           {
             to: "docs/gsoc2023",
             position: "left",
-            label: "GSoC 2023 Project Ideas",
+            label: "GSoC-2023",
+          },
+          {
+            to: "docs/press",
+            position: "left",
+            label: "Screenshots",
           },
           {
             href: "https://github.com/codepod-io/codepod",
