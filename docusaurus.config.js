@@ -76,7 +76,8 @@ const config = {
             position: "left",
             label: "Docs",
           },
-          { to: "/blog", label: "Blog", position: "left" },
+          // { to: "/blog", label: "Blog", position: "left" },
+          { to: "/docs/manual", label: "Manual", position: "left" },
           {
             to: "docs/gsoc2023",
             position: "left",
