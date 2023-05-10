@@ -57,10 +57,9 @@ npx prisma migrate dev
 
 This command is also needed after the database schema is changed. The protocol is:
 
-- One developer changed [the schema](./api/prisma/schema.prisma). He will run
+- One developer changed the schema `./api/prisma/schema.prisma`. He will run
   `npx prisma migrate dev --name add_a_new_field`. This will generate a
-  migration, e.g. [this
-  migration](./api/prisma/migrations/20221206194247_add_google_login/migration.sql).
+  migration.
   The schema change along with this migration need to be checked in to git.
 - Another developer pulls the change, then running the `npx prisma migrate dev` (in the api container's shell) to apply the schema change.
 
