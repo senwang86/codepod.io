@@ -46,12 +46,14 @@ export function Hero() {
               <div className="mt-10 flex items-center justify-center gap-x-6">
                 <a
                   href="https://app.codepod.io/login"
+                  target="_blank"
                   className="rounded-md bg-indigo-600 px-3.5 py-1.5 text-base font-semibold leading-7 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                 >
                   Try it online (experimental)
                 </a>
                 <a
                   href="https://arxiv.org/pdf/2301.02410"
+                  target="_blank"
                   className="text-base font-semibold leading-7 text-gray-900"
                 >
                   Read our paper <span aria-hidden="true">→</span>
