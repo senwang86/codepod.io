@@ -51,6 +51,12 @@ export function Hero() {
                 >
                   Try it online (experimental)
                 </a>
+                <Link
+                  href="/docs/manual"
+                  className="text-base font-semibold leading-7 text-gray-900"
+                >
+                  Read the manual <span aria-hidden="true">→</span>
+                </Link>
                 <a
                   href="https://arxiv.org/pdf/2301.02410"
                   target="_blank"
@@ -58,12 +64,6 @@ export function Hero() {
                 >
                   Read our paper <span aria-hidden="true">→</span>
                 </a>
-                <Link
-                  href="/docs/manual"
-                  className="text-base font-semibold leading-7 text-gray-900"
-                >
-                  Read the manual <span aria-hidden="true">→</span>
-                </Link>
                 {/* <a
                   href="https://github.com/codepod-io/codepod"
                   target="_blank"
