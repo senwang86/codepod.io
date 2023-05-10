@@ -48,7 +48,7 @@ export function Hero() {
                   href="https://app.codepod.io/login"
                   className="rounded-md bg-indigo-600 px-3.5 py-1.5 text-base font-semibold leading-7 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                 >
-                  Try it online
+                  Try it online (experimental)
                 </a>
                 <a
                   href="https://arxiv.org/pdf/2301.02410"
@@ -56,12 +56,19 @@ export function Hero() {
                 >
                   Read our paper <span aria-hidden="true">→</span>
                 </a>
-                <Link
+                {/* <Link
                   href="/docs/intro"
                   className="text-base font-semibold leading-7 text-gray-900"
                 >
                   Read the docs <span aria-hidden="true">→</span>
-                </Link>
+                </Link> */}
+                <a
+                  href="https://github.com/codepod-io/codepod"
+                  target="_blank"
+                  className="text-base font-semibold leading-7 text-gray-900"
+                >
+                  Source Code <span aria-hidden="true">→</span>
+                </a>
               </div>
             </div>
             <div className="mt-16 flow-root sm:mt-24">
