@@ -58,19 +58,19 @@ export function Hero() {
                 >
                   Read our paper <span aria-hidden="true">→</span>
                 </a>
-                {/* <Link
-                  href="/docs/intro"
+                <Link
+                  href="/docs/manual"
                   className="text-base font-semibold leading-7 text-gray-900"
                 >
-                  Read the docs <span aria-hidden="true">→</span>
-                </Link> */}
-                <a
+                  Read the manual <span aria-hidden="true">→</span>
+                </Link>
+                {/* <a
                   href="https://github.com/codepod-io/codepod"
                   target="_blank"
                   className="text-base font-semibold leading-7 text-gray-900"
                 >
                   Source Code <span aria-hidden="true">→</span>
-                </a>
+                </a> */}
               </div>
             </div>
             <div className="mt-16 flow-root sm:mt-24">
