@@ -2,7 +2,7 @@
 
 **Try it [here (experimental)](https://app.codepod.io)**
 
-## User Registration
+## Optional User Registration
 
 Codepod is a web app with standard user authentication. You can register, or better, you can login with your google account instantly. If you don't register & login, the system will register a Guest user, so that people can try out Codepod without registering.
 
