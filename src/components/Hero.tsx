@@ -58,7 +58,7 @@ export function Hero() {
                   Read the manual <span aria-hidden="true">→</span>
                 </Link>
                 <a
-                  href="https://arxiv.org/pdf/2301.02410"
+                  href="https://arxiv.org/abs/2301.02410"
                   target="_blank"
                   className="text-base font-semibold leading-7 text-gray-900"
                 >
