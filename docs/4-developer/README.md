@@ -1,6 +1,6 @@
 # Developer Manual
 
-The development repository is https://github.com/codepod-io/codepod
+The development repository is https://github.com/codepod-io/codepod. Please also check https://github.com/codepod-io/codepod/doc/onboarding.md for the development framework and system architecture description.
 
 The docker compose files are in `compose/dev` folder. The `dev` stack mounts the
 `src` folder, so that you can edit the files on your local computer, and let the
