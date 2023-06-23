@@ -106,7 +106,7 @@ If you are a developer who wants to change the database schema for adding a feat
 npx prisma migrate dev --name add_a_new_field
 ```
 
-to generate a migration, like [this](./api/prisma/migrations/20221206194247_add_google_login/migration.sql).
+to generate a migration, like [this](https://github.com/codepod-io/codepod/blob/main/api/prisma/migrations/20230223102734_add_updated_at/migration.sql).
 The schema change along with this migration need to be checked in (add, commit, and push) to git.
 
 ## Auto-completion & Linting
