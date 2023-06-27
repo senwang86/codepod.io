@@ -184,7 +184,7 @@ Then, you can access the new stack at `http://localhost:8080`.
 - Database: [PostgreSQL](https://www.postgresql.org/) + [Prisma](https://github.com/prisma/prisma)
 
 ### Codepod System Architecture
-![System arch](./pretty_Codepod_system_arch.png)
+![System arch](./Codepod_system_arch.png)
 
 ### Codepod GitHub Repo
 
